@@ -1,3 +1,4 @@
+-- Active: 1773134648916@@127.0.0.1@3306@mysql
 create database ALt_highshcool;
 use alt_highshcool;
 create table students (
