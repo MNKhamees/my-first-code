@@ -1,4 +1,5 @@
-create database ALt_highshcool
+create database ALt_highshcool;
+use alt_highshcool;
 create table students (
     id int primary key,
     student_name varchar(255),
@@ -8,5 +9,4 @@ create table students (
     student_email varchar(255),
     education_level char(1),
     track varchar(255),
-    student_GPA float,
-);
+    student_GPA float);
