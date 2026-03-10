@@ -1,2 +1,12 @@
-select*
-from analysis
+create database ALt_highshcool
+create table students (
+    id int primary key,
+    student_name varchar(255),
+    birth_date date,
+    sex char(1),
+    admission_date date,
+    student_email varchar(255),
+    education_level char(1),
+    track varchar(255),
+    student_GPA float,
+);
