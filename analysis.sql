@@ -207,6 +207,148 @@ month(admission_date) as 'admission month',
 day(admission_date) as 'admission day'
 from students;
 
+select *
+from students;
+
+DELETE from students where id BETWEEN 1 and 30;
+
+
+insert into students values(1,  'Ahmed Mohammed Alghamdi',      '2001-03-15', 'M', '2020-09-01', 'ahmed.alghamdi@uni.edu.sa',       3, 'Science',    87.50),
+(2,  'Noura Abdullah Alqahtani',     '2002-07-22', 'F', '2021-09-01', 'noura.alqahtani@uni.edu.sa',      2, 'Humanities', 91.00),
+(3,  'Khalid Saad Alotaibi',         '2000-11-05', 'M', '2019-09-01', 'khalid.alotaibi@uni.edu.sa',      4, 'Science',    78.25),
+(4,  'Sara Yousef Alzahrani',        '2003-01-30', 'F', '2022-09-01', 'sara.alzahrani@uni.edu.sa',       1, 'Humanities', 95.75),
+(5,  'Omar Fahad Aldosari',          '2001-06-18', 'M', '2020-09-01', 'omar.aldosari@uni.edu.sa',        3, 'Humanities', 82.00),
+(6,  'Reem Tariq Almalki',           '2002-04-09', 'F', '2021-09-01', 'reem.almalki@uni.edu.sa',         2, 'Science',    88.50),
+(7,  'Faisal Nasser Alshahri',       '1999-09-14', 'M', '2018-09-01', 'faisal.alshahri@uni.edu.sa',      5, 'Science',    70.00),
+(8,  'Hind Mohammed Alasiri',        '2000-12-25', 'F', '2019-09-01', 'hind.alasiri@uni.edu.sa',         4, 'Humanities', 93.20),
+(9,  'Turki Ali Albaqami',           '2003-08-03', 'M', '2022-09-01', 'turki.albaqami@uni.edu.sa',       1, 'Science',    65.40),
+(10, 'Lama Sultan Alharbi',          '2001-02-17', 'F', '2020-09-01', 'lama.alharbi@uni.edu.sa',         3, 'Science',    89.80),
+(11, 'Abdulrahman Walid Aljuhani',   '2000-05-21', 'M', '2019-09-01', 'abdulrahman.aljuhani@uni.edu.sa', 4, 'Humanities', 76.60),
+(12, 'Maha Rashed Alqarni',          '2002-10-11', 'F', '2021-09-01', 'maha.alqarni@uni.edu.sa',         2, 'Humanities', 84.30),
+(13, 'Sultan Hamad Alanazi',         '1998-07-07', 'M', '2017-09-01', 'sultan.alanazi@uni.edu.sa',       6, 'Science',    72.90),
+(14, 'Dana Karim Alsubaie',          '2003-03-28', 'F', '2022-09-01', 'dana.alsubaie@uni.edu.sa',        1, 'Humanities', 97.00),
+(15, 'Yousef Badr Alrashidi',        '2001-11-02', 'M', '2020-09-01', 'yousef.alrashidi@uni.edu.sa',     3, 'Science',    81.15),
+(16, 'Asma Farraj Althaqafi',        '2002-06-16', 'F', '2021-09-01', 'asma.althaqafi@uni.edu.sa',       2, 'Science',    90.45),
+(17, 'Mohammed Jaber Alsalmi',       '1999-01-19', 'M', '2018-09-01', 'mohammed.alsalmi@uni.edu.sa',     5, 'Humanities', 68.70),
+(18, 'Ghadir Wael Alamri',           '2000-08-24', 'F', '2019-09-01', 'ghadir.alamri@uni.edu.sa',        4, 'Science',    85.60),
+(19, 'Badr Saleh Alkhalidi',         '2003-05-06', 'M', '2022-09-01', 'badr.alkhalidi@uni.edu.sa',       1, 'Science',    59.90),
+(20, 'Shaimaa Adel Almutairi',       '2001-09-13', 'F', '2020-09-01', 'shaimaa.almutairi@uni.edu.sa',    3, 'Humanities', 92.35),
+(21, 'Rashed Mansour Alshamari',     '1998-04-04', 'M', '2017-09-01', 'rashed.alshamari@uni.edu.sa',     6, 'Humanities', 74.80),
+(22, 'Tala Ibrahim Albalawi',        '2002-12-01', 'F', '2021-09-01', 'tala.albalawi@uni.edu.sa',        2, 'Science',    86.20),
+(23, 'Abdullah Aziz Alzaid',         '2000-03-31', 'M', '2019-09-01', 'abdullah.alzaid@uni.edu.sa',      4, 'Science',    79.55),
+(24, 'Munira Sami Alajmi',           '2003-07-19', 'F', '2022-09-01', 'munira.alajmi@uni.edu.sa',        1, 'Humanities', 96.10),
+(25, 'Majed Farouq Alhamdan',        '2001-10-08', 'M', '2020-09-01', 'majed.alhamdan@uni.edu.sa',       3, 'Humanities', 83.75),
+(26, 'Rana Omar Alsaadi',            '2002-02-14', 'F', '2021-09-01', 'rana.alsaadi@uni.edu.sa',         2, 'Humanities', 88.00),
+(27, 'Waleed Kamel Alghurayb',       '1999-06-27', 'M', '2018-09-01', 'waleed.alghurayb@uni.edu.sa',     5, 'Science',    71.40),
+(28, 'Areej Hassan Alsaedi',         '2000-10-16', 'F', '2019-09-01', 'areej.alsaedi@uni.edu.sa',        4, 'Humanities', 94.65),
+(29, 'Naif Qasim Alhazmi',           '2003-11-23', 'M', '2022-09-01', 'naif.alhazmi@uni.edu.sa',         1, 'Science',    62.30),
+(30, 'Basma Hamza Alghamdi',         '2001-04-07', 'F', '2020-09-01', 'basma.alghamdi2@uni.edu.sa',      3, 'Science',    90.10);
+
+
+use alt_highshcool;
+create table excellent_students
+select * 
+from students
+where student_gpa >= 90;
+
+select *
+from excellent_students;
+
+create table failes_students
+select *
+from students
+where student_gpa <= 60;
+
+alter table failes_students 
+rename failed_students;
+
+select * 
+from failed_students;
+
+select * 
+from students
+where student_name like 'A%';
+
+select *
+from students
+where student_name like '____ %';
+
+select *
+from students;
+
+select min(student_gpa) as 'lowest gpa'
+from students;
+
+select max(student_gpa) as highest_gpa
+from students;
+
+select avg(student_gpa) as 'avg gpa'
+from students;
+
+select student_name, education_level, student_gpa
+from students
+where education_level = 6 and student_gpa = 100;
+
+select *
+from students
+where education_level = 1 and birth_date between '2006-01-01' and '2007-01-01';
+
+
+select count(id) as 'number of students'
+from students
+where education_level = 2;
+
+select track
+from students
+group by track;
+
+select upper(course_name) 
+from course;
+
+
+select floor(avg(student_gpa))
+from students;
+
+
+select student_name, replace(sex,'F', 'FEMALE') 
+from students;
+
+select student_name,
+CASE sex
+when 'F' then 'Female'
+when 'M' then 'Male'
+end as sex
+from students;
+
+alter table students
+modify sex char(10);
+
+
+select *
+from students
+where student_gpa < 60;
+
+update students
+set student_gpa = student_gpa + 5
+where student_gpa < 60;
+
+select *
+from students
+where id = 19;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
