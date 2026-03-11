@@ -81,7 +81,7 @@ create table students (
     (4, 'Art'),
     (5, 'History'),
     (6, 'Physical Education');
-    )
+
 
     DELETE FROM students WHERE id = 0;
 
@@ -94,4 +94,33 @@ create table students (
     UPDATE students set track = 'Art' where id = (1+7_3);
 
 select * 
+from students
+ORDER BY student_name aSC;
+
+select student_name as 'first name'
 from students;
+
+update students
+set student_email = 'yoseeef@mail.com'
+where student_name = 'yousef' and id = 6;
+
+update students 
+set student_email = 'youse@mail.com'
+where id = 30;
+
+select * 
+from teachers;
+
+update teachers
+set office_number = 69
+where id = 7;
+
+alter table teachers
+modify office_number char(10);
+
+
+alter table courses
+RENAME to course;
+
+select*
+from course;
