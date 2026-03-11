@@ -123,4 +123,96 @@ alter table courses
 RENAME to course;
 
 select*
-from course;
+from course
+where course_name like '%math%';
+
+select DISTINCT student_name
+from students;
+
+
+select student_email as 'email'
+from students;
+
+select *
+from students;
+
+select max(student_gpa) as 'max gpa', id
+from students;
+
+use alt_highshcool;
+create table students_data
+select * from students where student_gpa >= 3;
+
+drop table students_data;
+
+create table students_data
+select * from students where student_gpa >= 3.6;
+
+
+select * 
+from students_data;
+
+select * 
+from students
+GROUP BY student_gpa;
+
+select min(student_gpa), student_name, id
+from students;
+
+
+select avg(student_gpa) 
+from students;
+
+select max(student_gpa) 
+from students;
+
+select min(student_gpa)
+from students;
+
+select sum(student_gpa)
+from students;
+
+select count(id)
+from students;
+
+select pow(2,7);
+
+select abs(-8);
+
+select 10 div 2;
+
+select 10 mod 2;
+
+
+select ascii('H');
+
+select lower('HELLO');
+
+select upper('hello');
+
+select bin(46);
+
+select CONCAT('Hello', ' ', 'World');
+
+select hex(255);
+
+select 
+now() as 'date and time',
+curdate() as 'current date',
+curtime() as 'current time';
+
+select admission_date,
+year(admission_date) as 'admission year',
+month(admission_date) as 'admission month',
+day(admission_date) as 'admission day'
+from students;
+
+
+
+
+
+
+
+
+
+
