@@ -452,6 +452,20 @@ from courses
 natural join teachers;
 
 
+create view excilent_students
+AS
+select student_name, track, student_gpa
+from students
+where student_gpa <=90;
+
+
+select *
+from excellent_students;
+
+
+drop view excilent_students;
+
+
 
 
 
