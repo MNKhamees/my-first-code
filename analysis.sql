@@ -336,6 +336,37 @@ select *
 from students
 where id = 19;
 
+---foreign key
+---to link data to the primary key
+
+show tables;
+
+select *
+from students;
+
+select *
+from teachers, course;
+
+SELECT *
+from courses;
+
+insert into course values(
+    7, 'Computer Science'),
+    (8, 'Biology'),
+    (9, 'Law'),
+    (10, 'Economics');
+
+    alter Table course
+    rename courses;
+
+    alter table courses
+    add foreign key(id) references teachers(id);
+
+    select *
+    from teachers;
+
+    
+
 
 
 
