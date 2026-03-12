@@ -388,6 +388,10 @@ insert into course values(
 select *
 from courses;
 
+select *
+from teachers;
+
+
 alter table courses
 add foreign key (id) REFERENCES teachers(id);
 
@@ -416,6 +420,18 @@ select teachers.teacher_name, courses.course_name
 from teachers
 inner join courses
 on courses.id = teachers.id;
+
+select teachers.teacher_name, teachers.sex, teachers.office_number, courses.course_name
+from teachers
+left join courses
+on teachers.id = courses.id;
+
+select students.student_name, students.track, students.student_gpa, teachers.teacher_name, teachers.sex, teachers.office_number
+from students
+left join teachers
+on students.id = teachers.id;
+
+
 
 
 
