@@ -436,6 +436,23 @@ from students
 right join teachers
 on students.id = teachers.id;
 
+select *
+from students;
+
+select students.id, students.student_name, students.track, courses.course_name
+from students
+cross join courses;
+
+select *
+from students, courses;
+
+
+select *
+from courses
+natural join teachers;
+
+
+
 
 
 
