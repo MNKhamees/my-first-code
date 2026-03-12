@@ -365,7 +365,57 @@ insert into course values(
     select *
     from teachers;
 
-    
+    update courses
+    set id = CASE 
+        when id = 1 then 101
+        when id = 2 then 102
+        when id = 3 then 103
+        when id = 4 then 104
+        when id = 5 then 105
+        when id = 6 then 106
+        when id = 7 then 107
+        when id = 8 then 108
+        when id = 9 then 109
+        when id = 10 then 110
+        END
+        where id in (1,2,3,4,5,6,7,8,9,10);
+
+        alter table courses
+        drop FOREIGN key courses_ibfk_1;
+
+        show create table courses;
+
+select *
+from courses;
+
+alter table courses
+add foreign key (id) REFERENCES teachers(id);
+
+update courses
+set id = CASE 
+    When id = 101 then 1
+    when id = 102 then 2
+    when id = 103 then 3
+    when id = 104 then 4
+    when id = 105 then 5
+    when id = 106 then 6
+    when id = 107 then 7
+    when id = 108 then 8
+    when id = 109 then 9
+    when id = 110 then 10
+    END
+    where id in (101,102,103,104,105,106,107,108,109,110);
+
+    ---one to one = each person has one user etc
+
+    ---one to many = one person has many orders etc
+
+    ---many to many = many students can enroll in many courses'we use a nutral table between these two tables etc
+
+select teachers.teacher_name, courses.course_name
+from teachers
+inner join courses
+on courses.id = teachers.id;
 
 
 
