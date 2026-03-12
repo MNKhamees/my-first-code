@@ -475,7 +475,30 @@ from teachers;
 
 drop index office_number on teachers;
 
+delimiter //
+create procedure teachers()
+begin
+select * from teachers;
+end
 
+call teachers;
+
+delimiter //
+create procedure students()
+begin
+select*
+from students;
+end
+
+delimiter //
+create procedure courses()
+begin
+select*
+from courses;
+end
+
+call courses, teachers, students;
+---cannot call more than one procedure at a time
 
 
 
