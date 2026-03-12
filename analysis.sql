@@ -465,7 +465,15 @@ from excellent_students;
 
 drop view excilent_students;
 
+create index office_number
+on teachers(office_number);
 
+show index from teachers;
+
+select teacher_name, office_number
+from teachers;
+
+drop index office_number on teachers;
 
 
 
