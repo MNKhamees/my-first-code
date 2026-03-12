@@ -431,7 +431,10 @@ from students
 left join teachers
 on students.id = teachers.id;
 
-
+select students.student_name, students.track, students.student_gpa, teachers.teacher_name, teachers.sex, teachers.office_number
+from students
+right join teachers
+on students.id = teachers.id;
 
 
 
